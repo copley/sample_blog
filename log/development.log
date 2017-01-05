@@ -3584,3 +3584,1795 @@ Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2016-12-27 10:36:34 +1300
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-27 10:36:34 +1300
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-01 19:28:54 +1300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered collection (0.0ms)
+  Rendered articles/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 103ms (Views: 86.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-01 19:28:54 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-01 19:28:54 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-01 19:28:54 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-01 19:28:54 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-01 19:28:54 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-01 19:28:54 +1300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-01 19:28:54 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-01 19:28:54 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-01 19:28:54 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-01 19:28:54 +1300
+
+
+Started GET "/login" for 127.0.0.1 at 2017-01-01 19:28:57 +1300
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2017-01-01 19:28:58 +1300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R+ic5iDQhu9wkqcqjCOLmxl3Cct2qc5IcyTQP/v9vW8=", "email"=>"mary@example.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'mary@example.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-01 19:28:58 +1300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered collection (0.0ms)
+  Rendered articles/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-01 19:28:58 +1300
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-01 19:28:58 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-01 19:28:58 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-01 19:28:58 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-01 19:28:58 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-01 19:28:58 +1300
+
+
+Started GET "/?locale=pt-br" for 127.0.0.1 at 2017-01-01 19:29:01 +1300
+Processing by ArticlesController#index as HTML
+  Parameters: {"locale"=>"pt-br"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered collection (0.0ms)
+  Rendered articles/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 22ms (Views: 14.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/?locale=en" for 127.0.0.1 at 2017-01-01 19:29:02 +1300
+Processing by ArticlesController#index as HTML
+  Parameters: {"locale"=>"en"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered collection (0.0ms)
+  Rendered articles/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/?locale=pt-br" for 127.0.0.1 at 2017-01-01 19:29:06 +1300
+Processing by ArticlesController#index as HTML
+  Parameters: {"locale"=>"pt-br"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered collection (0.0ms)
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 9ms (Views: 8.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-05 11:30:53 +1300
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.5ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered collection (0.0ms)
+  Rendered articles/index.html.erb within layouts/application (5.0ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 104ms (Views: 86.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 11:30:53 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 11:30:53 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 11:30:53 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 11:30:53 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 11:30:53 +1300
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 11:30:53 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 11:30:53 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 11:30:53 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 11:30:53 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 11:30:53 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 11:30:53 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 11:30:53 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 11:30:53 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 11:30:53 +1300
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-01-05 11:30:55 +1300
+Processing by ArticlesController#new as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mCategory Load (0.5ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY categories.name[0m
+  Rendered articles/_form.html.erb (93.5ms)
+  Rendered articles/new.html.erb within layouts/application (97.8ms)
+Completed 500 Internal Server Error in 112ms
+
+ActionView::Template::Error (undefined method `to_datetime' for 0:Fixnum):
+    37:   </div>
+    38:   <div class="field">
+    39:     <%= f.label :published_at %><br>
+    40:     <%= f.datetime_select :published_at %>
+    41:   </div>
+    42:   <div class="actions">
+    43:     <%= submit_or_cancel(f) %>
+  app/views/articles/_form.html.erb:40:in `block in _app_views_articles__form_html_erb___2097116771960857676_70275234736760'
+  app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb___2097116771960857676_70275234736760'
+  app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb__2459230199935160783_70275241184540'
+
+
+  Rendered /Users/maxc/.rvm/gems/ruby-2.3.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /Users/maxc/.rvm/gems/ruby-2.3.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /Users/maxc/.rvm/gems/ruby-2.3.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (30.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 11:30:58 +1300
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 11:30:58 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 11:30:58 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 11:30:58 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 11:30:58 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 11:30:58 +1300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'mary@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.2ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:31:14 UTC +00:00], ["name", "Programming"], ["updated_at", Wed, 04 Jan 2017 22:31:14 UTC +00:00]]
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 04 Jan 2017 22:31:14 UTC +00:00], ["name", "Event"], ["updated_at", Wed, 04 Jan 2017 22:31:14 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:31:14 UTC +00:00], ["name", "Travel"], ["updated_at", Wed, 04 Jan 2017 22:31:14 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 04 Jan 2017 22:31:14 UTC +00:00], ["name", "Music"], ["updated_at", Wed, 04 Jan 2017 22:31:14 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:31:14 UTC +00:00], ["name", "TV"], ["updated_at", Wed, 04 Jan 2017 22:31:14 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-05 11:31:21 +1300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered collection (0.0ms)
+  Rendered articles/index.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+Completed 200 OK in 75ms (Views: 59.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:21 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:21 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:21 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:21 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:21 +1300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:21 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:21 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:21 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:21 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:21 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:21 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:21 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:21 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:21 +1300
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-01-05 11:31:24 +1300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-05 11:31:24 +1300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered collection (0.0ms)
+  Rendered articles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-01-05 11:31:25 +1300
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2017-01-05 11:31:26 +1300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FhLGsXU4d8avWj6jq6mEFxbhw8FEmsvveBdEpNT9Sbg=", "email"=>"qcopley@gmai.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'qcopley@gmai.com' LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:26 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:26 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:26 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:26 +1300
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:26 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:26 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:26 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:26 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:26 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:26 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:26 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:26 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:26 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:26 +1300
+
+
+Started POST "/session" for 127.0.0.1 at 2017-01-05 11:31:32 +1300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FhLGsXU4d8avWj6jq6mEFxbhw8FEmsvveBdEpNT9Sbg=", "email"=>"mary@example.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'mary@example.com' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:32 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:32 +1300
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:32 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:32 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:32 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:32 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:32 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:32 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:32 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:32 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:32 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:32 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:32 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:32 +1300
+
+
+Started POST "/session" for 127.0.0.1 at 2017-01-05 11:31:38 +1300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FhLGsXU4d8avWj6jq6mEFxbhw8FEmsvveBdEpNT9Sbg=", "email"=>"mary@example.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'mary@example.com' LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:38 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:38 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:38 +1300
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:38 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:38 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:38 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:38 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:38 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:38 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:38 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:38 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:38 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:38 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:38 +1300
+
+
+Started POST "/session" for 127.0.0.1 at 2017-01-05 11:31:51 +1300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FhLGsXU4d8avWj6jq6mEFxbhw8FEmsvveBdEpNT9Sbg=", "email"=>"qcopley@gmai.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'qcopley@gmai.com' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:51 +1300
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:51 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:51 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:51 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:51 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:51 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:51 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:51 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 11:31:51 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:51 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:51 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:51 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:51 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 11:31:51 +1300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'mary@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00], ["name", "Programming"], ["updated_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00], ["name", "Event"], ["updated_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00], ["name", "Travel"], ["updated_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00], ["name", "Music"], ["updated_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00], ["name", "TV"], ["updated_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'passwordispassword@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("created_at", "email", "hashed_password", "updated_at") VALUES (?, ?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00], ["email", "passwordispassword@example.com"], ["hashed_password", "5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8"], ["updated_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00], ["name", "Sample Name Here"], ["updated_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00], ["name", "Event"], ["updated_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00], ["name", "Travel"], ["updated_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00], ["name", "Music"], ["updated_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00], ["name", "TV"], ["updated_at", Wed, 04 Jan 2017 22:33:58 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  commit transaction
+
+
+Started GET "/session" for 127.0.0.1 at 2017-01-05 11:34:07 +1300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+AbstractController::ActionNotFound (The action 'show' could not be found for SessionsController):
+  actionpack (4.0.0) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__1799501593736806212__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/maxc/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/maxc/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/maxc/.rvm/rubies/ruby-2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/maxc/.rvm/gems/ruby-2.3.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-05 11:34:11 +1300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered collection (0.0ms)
+  Rendered articles/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 77ms (Views: 60.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 11:34:11 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 11:34:11 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 11:34:11 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 11:34:11 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 11:34:11 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:11 +1300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 11:34:11 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:11 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:11 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:11 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:11 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:11 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:11 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:11 +1300
+
+
+Started GET "/login" for 127.0.0.1 at 2017-01-05 11:34:12 +1300
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2017-01-05 11:34:31 +1300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FhLGsXU4d8avWj6jq6mEFxbhw8FEmsvveBdEpNT9Sbg=", "email"=>"passwordispassword@example.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'passwordispassword@example.com' LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 12ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-05 11:34:31 +1300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered collection (0.0ms)
+  Rendered articles/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 11:34:31 +1300
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 11:34:31 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 11:34:31 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:31 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 11:34:31 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 11:34:31 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 11:34:31 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:31 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:31 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:31 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:31 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:31 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:31 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:31 +1300
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-01-05 11:34:34 +1300
+Processing by ArticlesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY categories.name[0m
+  Rendered articles/_form.html.erb (75.7ms)
+  Rendered articles/new.html.erb within layouts/application (78.1ms)
+Completed 500 Internal Server Error in 87ms
+
+ActionView::Template::Error (undefined method `to_datetime' for 0:Fixnum):
+    37:   </div>
+    38:   <div class="field">
+    39:     <%= f.label :published_at %><br>
+    40:     <%= f.datetime_select :published_at %>
+    41:   </div>
+    42:   <div class="actions">
+    43:     <%= submit_or_cancel(f) %>
+  app/views/articles/_form.html.erb:40:in `block in _app_views_articles__form_html_erb__962089817040963956_70199175424100'
+  app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb__962089817040963956_70199175424100'
+  app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb__940576815548100793_70199175490900'
+
+
+  Rendered /Users/maxc/.rvm/gems/ruby-2.3.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /Users/maxc/.rvm/gems/ruby-2.3.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /Users/maxc/.rvm/gems/ruby-2.3.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (28.4ms)
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 11:34:37 +1300
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 11:34:37 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:37 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 11:34:37 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:37 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 11:34:37 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:37 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:37 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 11:34:37 +1300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 11:34:37 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:37 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:37 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:37 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 11:34:37 +1300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'mary@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00], ["name", "Programming"], ["updated_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00], ["name", "Event"], ["updated_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00], ["name", "Travel"], ["updated_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00], ["name", "Music"], ["updated_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00], ["name", "TV"], ["updated_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'passwordispassword@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00], ["name", "Sample Name Here"], ["updated_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00], ["name", "Event"], ["updated_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00], ["name", "Travel"], ["updated_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00], ["name", "Music"], ["updated_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00], ["name", "TV"], ["updated_at", Wed, 04 Jan 2017 22:34:52 UTC +00:00]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-05 11:35:02 +1300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered collection (0.0ms)
+  Rendered articles/index.html.erb within layouts/application (2.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Completed 200 OK in 70ms (Views: 57.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 11:35:02 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 11:35:02 +1300
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 11:35:02 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 11:35:02 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 11:35:02 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 11:35:02 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 11:35:02 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 11:35:02 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 11:35:02 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 11:35:02 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 11:35:02 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 11:35:02 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 11:35:02 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 11:35:02 +1300
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-01-05 11:35:05 +1300
+Processing by ArticlesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY categories.name[0m
+  Rendered articles/_form.html.erb (84.5ms)
+  Rendered articles/new.html.erb within layouts/application (87.2ms)
+Completed 500 Internal Server Error in 96ms
+
+ActionView::Template::Error (undefined method `to_datetime' for 0:Fixnum):
+    37:   </div>
+    38:   <div class="field">
+    39:     <%= f.label :published_at %><br>
+    40:     <%= f.datetime_select :published_at %>
+    41:   </div>
+    42:   <div class="actions">
+    43:     <%= submit_or_cancel(f) %>
+  app/views/articles/_form.html.erb:40:in `block in _app_views_articles__form_html_erb___3619992344707870601_70165000543460'
+  app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb___3619992344707870601_70165000543460'
+  app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___3825748753605086924_70165000636160'
+
+
+  Rendered /Users/maxc/.rvm/gems/ruby-2.3.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/maxc/.rvm/gems/ruby-2.3.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /Users/maxc/.rvm/gems/ruby-2.3.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (30.3ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 11:35:20 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 11:35:20 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 11:35:20 +1300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 11:35:20 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 11:35:20 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 11:35:20 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 11:35:20 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 11:35:20 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 11:35:20 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 11:35:20 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 11:35:20 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 11:35:20 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 11:35:20 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 11:35:20 +1300
+
+
+Started GET "/users/2/edit" for 127.0.0.1 at 2017-01-05 11:35:23 +1300
+Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+  Rendered users/_form.html.erb (6.9ms)
+  Rendered users/edit.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 26ms (Views: 23.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-05 11:35:27 +1300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered collection (0.0ms)
+  Rendered articles/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-01-05 11:35:28 +1300
+Processing by ArticlesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mCategory Load (0.6ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY categories.name[0m
+  Rendered articles/_form.html.erb (50.8ms)
+  Rendered articles/new.html.erb within layouts/application (52.4ms)
+Completed 500 Internal Server Error in 60ms
+
+ActionView::Template::Error (undefined method `to_datetime' for 0:Fixnum):
+    37:   </div>
+    38:   <div class="field">
+    39:     <%= f.label :published_at %><br>
+    40:     <%= f.datetime_select :published_at %>
+    41:   </div>
+    42:   <div class="actions">
+    43:     <%= submit_or_cancel(f) %>
+  app/views/articles/_form.html.erb:40:in `block in _app_views_articles__form_html_erb___3619992344707870601_70165000543460'
+  app/views/articles/_form.html.erb:1:in `_app_views_articles__form_html_erb___3619992344707870601_70165000543460'
+  app/views/articles/new.html.erb:3:in `_app_views_articles_new_html_erb___3825748753605086924_70165000636160'
+
+
+  Rendered /Users/maxc/.rvm/gems/ruby-2.3.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /Users/maxc/.rvm/gems/ruby-2.3.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /Users/maxc/.rvm/gems/ruby-2.3.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (31.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mUser Exists (0.1ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'mary@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.1ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00], ["name", "Programming"], ["updated_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00], ["name", "Event"], ["updated_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00], ["name", "Travel"], ["updated_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00], ["name", "Music"], ["updated_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00], ["name", "TV"], ["updated_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT 1 AS one FROM "users" WHERE "users"."email" = 'passwordispassword@example.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00], ["name", "Sample Name Here"], ["updated_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00], ["name", "Event"], ["updated_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00], ["name", "Travel"], ["updated_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00], ["name", "Music"], ["updated_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "categories" ("created_at", "name", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00], ["name", "TV"], ["updated_at", Wed, 04 Jan 2017 22:36:55 UTC +00:00]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-01-05 11:37:56 +1300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY categories.name[0m
+  Rendered articles/_form.html.erb (60.5ms)
+  Rendered articles/new.html.erb within layouts/application (63.1ms)
+Completed 200 OK in 149ms (Views: 118.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 11:37:57 +1300
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 11:37:57 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 11:37:57 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 11:37:57 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 11:37:57 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 11:37:57 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 11:37:57 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 11:37:57 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 11:37:57 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 11:37:57 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 11:37:57 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 11:37:57 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 11:37:57 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 11:37:57 +1300
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-05 11:38:04 +1300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.1ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered collection (0.0ms)
+  Rendered articles/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-01-05 11:38:06 +1300
+Processing by ArticlesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mCategory Load (0.4ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY categories.name[0m
+  Rendered articles/_form.html.erb (33.0ms)
+  Rendered articles/new.html.erb within layouts/application (34.7ms)
+Completed 200 OK in 49ms (Views: 47.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-01-05 11:38:12 +1300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FhLGsXU4d8avWj6jq6mEFxbhw8FEmsvveBdEpNT9Sbg=", "article"=>{"title"=>"Herer", "location"=>"ererghkldfjhg", "excerpt"=>"", "body"=>"", "published_at(1i)"=>"2017", "published_at(2i)"=>"1", "published_at(3i)"=>"4", "published_at(4i)"=>"22", "published_at(5i)"=>"38"}, "commit"=>"Create Article"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY categories.name[0m
+  Rendered articles/_form.html.erb (14.7ms)
+  Rendered articles/new.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 28ms (Views: 19.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 11:38:12 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 11:38:12 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 11:38:12 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:12 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:12 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 11:38:12 +1300
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 11:38:12 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 11:38:12 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:12 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:12 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:12 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:12 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:12 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:12 +1300
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-01-05 11:38:26 +1300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FhLGsXU4d8avWj6jq6mEFxbhw8FEmsvveBdEpNT9Sbg=", "article"=>{"title"=>"Herer", "location"=>"ererghkldfjhg", "excerpt"=>"srtgsdfgsdg", "body"=>"spsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishg", "published_at(1i)"=>"2017", "published_at(2i)"=>"1", "published_at(3i)"=>"4", "published_at(4i)"=>"22", "published_at(5i)"=>"38"}, "commit"=>"Create Article"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "articles" ("body", "created_at", "excerpt", "location", "published_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["body", "spsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishg"], ["created_at", Wed, 04 Jan 2017 22:38:26 UTC +00:00], ["excerpt", "srtgsdfgsdg"], ["location", "ererghkldfjhg"], ["published_at", Wed, 04 Jan 2017 22:38:00 UTC +00:00], ["title", "Herer"], ["updated_at", Wed, 04 Jan 2017 22:38:26 UTC +00:00], ["user_id", 2]]
+  [1m[36m (2.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles/3
+Completed 302 Found in 10ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/articles/3" for 127.0.0.1 at 2017-01-05 11:38:26 +1300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "3"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered articles/_article.html.erb (7.2ms)
+  Rendered articles/_notify_friend.html.erb (0.9ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 3]]
+  Rendered collection (0.0ms)
+  Rendered articles/show.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 11:38:26 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 11:38:26 +1300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 11:38:26 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 11:38:26 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 11:38:26 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 11:38:26 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:26 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:26 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:26 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:26 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:26 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:26 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:26 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:26 +1300
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-01-05 11:38:32 +1300
+Processing by ArticlesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mCategory Load (0.3ms)[0m  [1mSELECT "categories".* FROM "categories" ORDER BY categories.name[0m
+  Rendered articles/_form.html.erb (30.3ms)
+  Rendered articles/new.html.erb within layouts/application (31.0ms)
+Completed 200 OK in 39ms (Views: 37.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-01-05 11:38:52 +1300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FhLGsXU4d8avWj6jq6mEFxbhw8FEmsvveBdEpNT9Sbg=", "article"=>{"title"=>"Article 2", "location"=>"Herer", "category_ids"=>["32", "19", "36"], "excerpt"=>"This is it", "body"=>"spsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishg", "published_at(1i)"=>"2017", "published_at(2i)"=>"1", "published_at(3i)"=>"4", "published_at(4i)"=>"22", "published_at(5i)"=>"38"}, "commit"=>"Create Article"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT "categories".* FROM "categories" WHERE "categories"."id" IN (32, 19, 36) ORDER BY categories.name[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "articles" ("body", "created_at", "excerpt", "location", "published_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["body", "spsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishgspsiughlsidfuhglsidufhg;odishg"], ["created_at", Wed, 04 Jan 2017 22:38:52 UTC +00:00], ["excerpt", "This is it"], ["location", "Herer"], ["published_at", Wed, 04 Jan 2017 22:38:00 UTC +00:00], ["title", "Article 2"], ["updated_at", Wed, 04 Jan 2017 22:38:52 UTC +00:00], ["user_id", 2]]
+  [1m[35m (0.1ms)[0m  INSERT INTO "articles_categories" ("article_id", "category_id") VALUES (4, 32)
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "articles_categories" ("article_id", "category_id") VALUES (4, 19)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "articles_categories" ("article_id", "category_id") VALUES (4, 36)
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles/4
+Completed 302 Found in 8ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2017-01-05 11:38:52 +1300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered articles/_article.html.erb (2.8ms)
+  Rendered articles/_notify_friend.html.erb (0.5ms)
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 4]]
+  Rendered collection (0.0ms)
+  Rendered articles/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 11:38:52 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 11:38:52 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 11:38:52 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 11:38:52 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 11:38:52 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:52 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:52 +1300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 11:38:52 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:52 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:52 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:52 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:52 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:52 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 11:38:52 +1300
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-05 11:38:55 +1300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.4ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered articles/_article.html.erb (6.6ms)
+  Rendered articles/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/articles/4" for 127.0.0.1 at 2017-01-05 11:39:02 +1300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", "4"]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered articles/_article.html.erb (4.3ms)
+  Rendered articles/_notify_friend.html.erb (0.9ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 4]]
+  Rendered collection (0.0ms)
+  Rendered articles/show.html.erb within layouts/application (9.4ms)
+Completed 200 OK in 26ms (Views: 21.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-05 11:39:06 +1300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered articles/_article.html.erb (7.3ms)
+  Rendered articles/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-05 12:41:35 +1300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered articles/_article.html.erb (6.0ms)
+  Rendered articles/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/logout" for 127.0.0.1 at 2017-01-05 12:41:37 +1300
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-05 12:41:37 +1300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/_article.html.erb (1.3ms)
+  Rendered articles/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-05 12:41:39 +1300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/_article.html.erb (0.8ms)
+  Rendered articles/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 12:41:39 +1300
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 12:41:39 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 12:41:39 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 12:41:39 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 12:41:39 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 12:41:39 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 12:41:39 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 12:41:39 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 12:41:39 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 12:41:39 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 12:41:39 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 12:41:39 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 12:41:39 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 12:41:39 +1300
+
+
+Started GET "/login" for 127.0.0.1 at 2017-01-05 12:41:43 +1300
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/session" for 127.0.0.1 at 2017-01-05 12:41:49 +1300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fcK2H0Xaw9POjyYUWeB+tRgECBRQ9p0X1s3dmyAKFcM=", "email"=>"passwordispassword@example.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'passwordispassword@example.com' LIMIT 1
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 12:41:49 +1300
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 12:41:49 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 12:41:49 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 12:41:49 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 12:41:49 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 12:41:49 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 12:41:49 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 12:41:49 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 12:41:49 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 12:41:49 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 12:41:49 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 12:41:49 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 12:41:49 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 12:41:49 +1300
+
+
+Started POST "/session" for 127.0.0.1 at 2017-01-05 12:42:01 +1300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fcK2H0Xaw9POjyYUWeB+tRgECBRQ9p0X1s3dmyAKFcM=", "email"=>"passwordispassword@example.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'passwordispassword@example.com' LIMIT 1[0m
+  Rendered sessions/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 5.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:01 +1300
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:01 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:01 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:01 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:01 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:01 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:01 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:01 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:01 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:01 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:01 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:01 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:01 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:01 +1300
+
+
+Started POST "/session" for 127.0.0.1 at 2017-01-05 12:42:11 +1300
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fcK2H0Xaw9POjyYUWeB+tRgECBRQ9p0X1s3dmyAKFcM=", "email"=>"passwordispassword@example.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."email" = 'passwordispassword@example.com' LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-05 12:42:11 +1300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered articles/_article.html.erb (3.9ms)
+  Rendered articles/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:11 +1300
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:11 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:11 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:11 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:11 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:11 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:11 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:11 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:11 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:11 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:11 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:11 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:11 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:11 +1300
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2017-01-05 12:42:15 +1300
+Processing by ArticlesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mCategory Load (0.5ms)[0m  SELECT "categories".* FROM "categories" ORDER BY categories.name
+  Rendered articles/_form.html.erb (25.3ms)
+  Rendered articles/new.html.erb within layouts/application (26.0ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2017-01-05 12:42:27 +1300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fcK2H0Xaw9POjyYUWeB+tRgECBRQ9p0X1s3dmyAKFcM=", "article"=>{"title"=>"sdgfsdg", "location"=>"gsdfg", "category_ids"=>["2"], "excerpt"=>"sdfgsdfg", "body"=>"dsfgsdfgsdfgsgdsGSD\r\nfG\r\nsdfG\r\nsdfg\r\nSDfg\r\nSDf\r\nGsdF\r\nGdfsg", "published_at(1i)"=>"2017", "published_at(2i)"=>"1", "published_at(3i)"=>"4", "published_at(4i)"=>"23", "published_at(5i)"=>"42"}, "commit"=>"Create Article"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mCategory Load (0.1ms)[0m  SELECT "categories".* FROM "categories" WHERE "categories"."id" = ? ORDER BY categories.name LIMIT 1  [["id", 2]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "articles" ("body", "created_at", "excerpt", "location", "published_at", "title", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["body", "dsfgsdfgsdfgsgdsGSD\r\nfG\r\nsdfG\r\nsdfg\r\nSDfg\r\nSDf\r\nGsdF\r\nGdfsg"], ["created_at", Wed, 04 Jan 2017 23:42:27 UTC +00:00], ["excerpt", "sdfgsdfg"], ["location", "gsdfg"], ["published_at", Wed, 04 Jan 2017 23:42:00 UTC +00:00], ["title", "sdgfsdg"], ["updated_at", Wed, 04 Jan 2017 23:42:27 UTC +00:00], ["user_id", 2]]
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "articles_categories" ("article_id", "category_id") VALUES (5, 2)[0m
+  [1m[35m (1.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/5
+Completed 302 Found in 8ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/articles/5" for 127.0.0.1 at 2017-01-05 12:42:27 +1300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", "5"]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered articles/_article.html.erb (3.8ms)
+  Rendered articles/_notify_friend.html.erb (0.5ms)
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 5]]
+  Rendered collection (0.0ms)
+  Rendered articles/show.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:27 +1300
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:27 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:27 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:27 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:27 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:27 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:27 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:27 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:27 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:27 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:27 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:27 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:27 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:27 +1300
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-05 12:42:29 +1300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered articles/_article.html.erb (9.6ms)
+  Rendered articles/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 20ms (Views: 18.7ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/articles/4" for 127.0.0.1 at 2017-01-05 12:42:32 +1300
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fcK2H0Xaw9POjyYUWeB+tRgECBRQ9p0X1s3dmyAKFcM=", "id"=>"4"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT "articles".* FROM "articles" WHERE "articles"."user_id" = ? AND "articles"."id" = ? ORDER BY published_at DESC, title ASC LIMIT 1[0m  [["user_id", 2], ["id", "4"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mDELETE FROM "articles_categories" WHERE "articles_categories"."article_id" = 4[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "articles" WHERE "articles"."id" = ?  [["id", 4]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 6ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2017-01-05 12:42:32 +1300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered articles/_article.html.erb (5.5ms)
+  Rendered articles/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:32 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:32 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:32 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:32 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:32 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:32 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:32 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:32 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:32 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:32 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:32 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:32 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 12:42:32 +1300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 12:42:32 +1300
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-05 12:42:33 +1300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered articles/_article.html.erb (6.2ms)
+  Rendered articles/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-01-05 13:05:57 +1300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 2 LIMIT 1[0m
+  [1m[35mUser Load (1.5ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered articles/_article.html.erb (35.4ms)
+  Rendered articles/index.html.erb within layouts/application (54.8ms)
+Completed 200 OK in 117ms (Views: 99.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-01-05 13:05:57 +1300
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2017-01-05 13:05:57 +1300
+
+
+Started GET "/assets/articles.css?body=1" for 127.0.0.1 at 2017-01-05 13:05:57 +1300
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-01-05 13:05:57 +1300
+
+
+Started GET "/assets/sessions.css?body=1" for 127.0.0.1 at 2017-01-05 13:05:57 +1300
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2017-01-05 13:05:57 +1300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-01-05 13:05:57 +1300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-01-05 13:05:57 +1300
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-01-05 13:05:57 +1300
+
+
+Started GET "/assets/articles.js?body=1" for 127.0.0.1 at 2017-01-05 13:05:57 +1300
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2017-01-05 13:05:57 +1300
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2017-01-05 13:05:57 +1300
+
+
+Started GET "/assets/sessions.js?body=1" for 127.0.0.1 at 2017-01-05 13:05:57 +1300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-01-05 13:05:57 +1300

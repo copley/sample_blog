@@ -7,9 +7,15 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 #
 
-user = User.create :email => 'mary@example.com', :password => 'guessit' 
-Category.create [{:name => 'Programming'}, 
-  {:name => 'Event'}, 
+user = User.create :email => 'mary@example.com', :password => 'guessit'
+Category.create [{:name => 'Programming'},
+  {:name => 'Event'},
+  {:name => 'Travel'},
+  {:name => 'Music'},
+  {:name => 'TV'}]
+user = User.create :email => 'passwordispassword@example.com', :password => 'password'
+Category.create [{:name => 'Sample Name Here'},
+  {:name => 'Event'},
   {:name => 'Travel'}, 
-  {:name => 'Music'}, 
+  {:name => 'Music'},
   {:name => 'TV'}]
