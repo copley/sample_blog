@@ -14,4 +14,5 @@ production:
   adapter: postgresql
   pool: 12
   encoding: utf8
-  url: <%= ENV['DATABASE_URL'] %>
+  url: postgres://bob:mypassword@postgresql/sample_blog_production
+  #url: <%= ENV['DATABASE_URL'] %>
