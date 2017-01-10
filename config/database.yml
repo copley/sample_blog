@@ -1,8 +1,9 @@
 development:
   adapter: postgresql
   encoding: utf8
-  url: postgres://maxc@localhost/sample_blog_development
-  database: sample_blog_development
+  url: "postgres://maxc@localhost/sample_blog_development"
+  #database: sample_blog_development
+  #url: <%= ENV['DATABASE_URL'] %>
   pool: 5
 
 test:
@@ -15,6 +16,9 @@ production:
   adapter: postgresql
   pool: 12
   encoding: utf8
-  url: postgres://bob:mypassword@postgresql/sample_blog_production
-  database: sample_blog_production
+  url: "postgres://bob:mypassword@postgresql/sample_blog_production"
+  #database: sample_blog_production
   #url: <%= ENV['DATABASE_URL'] %>
+  #export RAILS_ENV=production
+  #export DATABASE_URL=postgresql://localhost/my_database?pool=5
+  #rails server
