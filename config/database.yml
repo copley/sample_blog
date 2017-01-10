@@ -1,6 +1,7 @@
 development:
   adapter: postgresql
   encoding: utf8
+  url: postgres://maxc@localhost/sample_blog_development
   database: sample_blog_development
   pool: 5
 
@@ -15,4 +16,5 @@ production:
   pool: 12
   encoding: utf8
   url: postgres://bob:mypassword@postgresql/sample_blog_production
+  database: sample_blog_production
   #url: <%= ENV['DATABASE_URL'] %>
