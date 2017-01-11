@@ -1,4 +1,4 @@
-user = User.create :email => '1@example.com', :password => ''
+user = User.create :email => '1@example.com', :password => 'qwertyuiop'
 Category.create [{:name => 'Programming'},
   {:name => 'Event'},
   {:name => 'Travel'},
