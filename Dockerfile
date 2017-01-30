@@ -11,4 +11,4 @@ RUN bundle install --deployment --without development test
 ADD . /www
 
 
-CMD bundle exec rails server -b '0.0.0.0'
+CMD bundle exec rake db:migrate db:seed && bundle exec rails server -b '0.0.0.0'

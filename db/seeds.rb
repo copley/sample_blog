@@ -1,80 +1,155 @@
-user = User.create :email => '1@example.com', :password => 'qwertyuiop'
-Category.create [{:name => 'Programming'},
-  {:name => 'Event'},
-  {:name => 'Travel'},
-  {:name => 'Music'},
-  {:name => 'TV'}]
-user = User.create :email => 'passwordispassword@example.com', :password => 'password'
+if Article.count == 0
 
-article = Article.create :title => 'hhhhhhhhh', :body => 'Lorem With the
-file db/seeds.rb, the Rails gods have given us a way of feeding default
-values easily and quickly to a fresh installation. This is a normal Ruby
-program within the Rails environment. You have full access to all classes
-and methods of your application.
-So you do not need to enter everything manually with rails console in ord
-  er to make the records created in the section called “create” available
-  in a new Rails application, but you can simply use the following file db
-  /seeds.rb:'
-article = Article.create :title => 'hhhhhhhhh', :body => 'Lorem With the
-file db/seeds.rb, the Rails gods have given us a way of feeding default
-values easily and quickly to a fresh installation. This is a normal Ruby
-program within the Rails environment. You have full access to all classes
-and methods of your application.
-So you do not need to enter everything manually with rails console in ord
-  er to make the records created in the section called “create” available
-  in a new Rails application, but you can simply use the following file db
-  /seeds.rb:'
-article = Article.create :title => 'hhhhhhhhh', :body => 'Lorem With the
-file db/seeds.rb, the Rails gods have given us a way of feeding default
-values easily and quickly to a fresh installation. This is a normal Ruby
-program within the Rails environment. You have full access to all classes
-and methods of your application.
-So you do not need to enter everything manually with rails console in ord
-  er to make the records created in the section called “create” available
-  in a new Rails application, but you can simply use the following file db
-  /seeds.rb:'
-article = Article.create :title => 'hhhhhhhhh', :body => 'Lorem With the
-file db/seeds.rb, the Rails gods have given us a way of feeding default
-values easily and quickly to a fresh installation. This is a normal Ruby
-program within the Rails environment. You have full access to all classes
-and methods of your application.
-So you do not need to enter everything manually with rails console in ord
-  er to make the records created in the section called “create” available
-  in a new Rails application, but you can simply use the following file db
-  /seeds.rb:'
-article = Article.create :title => 'hhhhhhhhh', :body => 'Lorem With the
-file db/seeds.rb, the Rails gods have given us a way of feeding default
-values easily and quickly to a fresh installation. This is a normal Ruby
-program within the Rails environment. You have full access to all classes
-and methods of your application.
-So you do not need to enter everything manually with rails console in ord
-  er to make the records created in the section called “create” available
-  in a new Rails application, but you can simply use the following file db
-  /seeds.rb:'
-article = Article.create :title => 'hhhhhhhhh', :body => 'Lorem With the
-file db/seeds.rb, the Rails gods have given us a way of feeding default
-values easily and quickly to a fresh installation. This is a normal Ruby
-program within the Rails environment. You have full access to all classes
-and methods of your application.
-So you do not need to enter everything manually with rails console in ord
-  er to make the records created in the section called “create” available
-  in a new Rails application, but you can simply use the following file db
-  /seeds.rb:'
-article = Article.create :title => 'hhhhhhhhh', :body => 'Lorem With the
-file db/seeds.rb, the Rails gods have given us a way of feeding default
-values easily and quickly to a fresh installation. This is a normal Ruby
-program within the Rails environment. You have full access to all classes
-and methods of your application.
-So you do not need to enter everything manually with rails console in ord
-  er to make the records created in the section called “create” available
-  in a new Rails application, but you can simply use the following file db
-  /seeds.rb:'
-article = Article.create :title => 'hhhhhhhhh', :body => 'Lorem With the
-file db/seeds.rb, the Rails gods have given us a way of feeding default
-values easily and quickly to a fresh installation. This is a normal Ruby
-program within the Rails environment. You have full access to all classes
-and methods of your application.
-So you do not need to enter everything manually with rails console in ord
-  er to make the records created in the section called “create” available
-  in a new Rails application, but you can simply use the following file db
-  /seeds.rb:'
+  user = User.create :email => 'testuser1@example.com', :password => 'password1'
+  user = User.create :email => 'testuser2@example.com', :password => 'password2'
+
+  Category.create [{:name => 'Programming'},
+    {:name => 'Event'},
+    {:name => 'Travel'},
+    {:name => 'Music'},
+    {:name => 'TV'}]
+
+  article = Article.create :title => 'Article 1', :body => 'Lorem ipsum dolor sit amet,
+  consectetur adipiscing elit. Donec a dictum magna. Maecenas suscipit velit et ullamco
+  rper varius. Vivamus ut arcu quis tellus fringilla pharetra. Donec quis velit fringil
+  la tellus elementum hendrerit. Sed cursus varius velit, vitae pharetra nisl pellentes
+  que in. Donec non tellus vel odio condimentum pharetra. Pellentesque lorem turpis, eu
+  ismod vel erat sed, egestas ullamcorper lorem. Vivamus a convallis odio. In ultrices
+  rhoncus justo. Nulla id feugiat massa. Sed eget aliquet purus. o;eirgn ;grejig gj;osi
+  Duis placerat ante vel sem lobortis consequat. Fusce non elit augue. Aliquam nec magn
+  tincidunt, tincidunt felis non, pellentesque arcu. Cum sociis natoque penatibus et
+  magnis dis parturient montes, nascetur ridiculus mus. Suspendisse interdum vel lorem
+  sed rhoncus. Ut pulvinar sollicitudin ornare. Praesent sed ipsum elit. Donec dapibu
+  ultricies est, at consequat magna suscipit ut. Praesent feugiat mollis quam in rhoncu
+  Etiam in quam consectetur, porttitor odio eu, ultricies magna. Aenean condimentum fri
+  ngilla dui vitae luctus. In malesuada lectus at lorem scelerisque lobortis. Duis eu e
+  lit at quam malesuada vehicula. Vivamus sapien ante, varius eu metus at, efficitur vo
+  lutpat magna. Maecenas massa sapien, suscipit eu lectus ut, porta dapibus nibh. Curab
+  itur sed porttitor tortor. Duis imperdiet hendrerit viverra. Donec ac tincidunt risu.'
+
+  article = Article.create :title => 'Article 2', :body => 'Lorem ipsum dolor sit amet,
+  consectetur adipiscing elit. Donec a dictum magna. Maecenas suscipit velit et ullamco
+  rper varius. Vivamus ut arcu quis tellus fringilla pharetra. Donec quis velit fringil
+  la tellus elementum hendrerit. Sed cursus varius velit, vitae pharetra nisl pellentes
+  que in. Donec non tellus vel odio condimentum pharetra. Pellentesque lorem turpis, eu
+  ismod vel erat sed, egestas ullamcorper lorem. Vivamus a convallis odio. In ultrices
+  rhoncus justo. Nulla id feugiat massa. Sed eget aliquet purus. o;eirgn ;grejig gj;osi
+  Duis placerat ante vel sem lobortis consequat. Fusce non elit augue. Aliquam nec magn
+  tincidunt, tincidunt felis non, pellentesque arcu. Cum sociis natoque penatibus et
+  magnis dis parturient montes, nascetur ridiculus mus. Suspendisse interdum vel lorem
+  sed rhoncus. Ut pulvinar sollicitudin ornare. Praesent sed ipsum elit. Donec dapibu
+  ultricies est, at consequat magna suscipit ut. Praesent feugiat mollis quam in rhoncu
+  Etiam in quam consectetur, porttitor odio eu, ultricies magna. Aenean condimentum fri
+  ngilla dui vitae luctus. In malesuada lectus at lorem scelerisque lobortis. Duis eu e
+  lit at quam malesuada vehicula. Vivamus sapien ante, varius eu metus at, efficitur vo
+  lutpat magna. Maecenas massa sapien, suscipit eu lectus ut, porta dapibus nibh. Curab
+  itur sed porttitor tortor. Duis imperdiet hendrerit viverra. Donec ac tincidunt risu.'
+
+  article = Article.create :title => 'Article 3', :body => 'Lorem ipsum dolor sit amet,
+  consectetur adipiscing elit. Donec a dictum magna. Maecenas suscipit velit et ullamco
+  rper varius. Vivamus ut arcu quis tellus fringilla pharetra. Donec quis velit fringil
+  la tellus elementum hendrerit. Sed cursus varius velit, vitae pharetra nisl pellentes
+  que in. Donec non tellus vel odio condimentum pharetra. Pellentesque lorem turpis, eu
+  ismod vel erat sed, egestas ullamcorper lorem. Vivamus a convallis odio. In ultrices
+  rhoncus justo. Nulla id feugiat massa. Sed eget aliquet purus. o;eirgn ;grejig gj;osi
+  Duis placerat ante vel sem lobortis consequat. Fusce non elit augue. Aliquam nec magn
+  tincidunt, tincidunt felis non, pellentesque arcu. Cum sociis natoque penatibus et
+  magnis dis parturient montes, nascetur ridiculus mus. Suspendisse interdum vel lorem
+  sed rhoncus. Ut pulvinar sollicitudin ornare. Praesent sed ipsum elit. Donec dapibu
+  ultricies est, at consequat magna suscipit ut. Praesent feugiat mollis quam in rhoncu
+  Etiam in quam consectetur, porttitor odio eu, ultricies magna. Aenean condimentum fri
+  ngilla dui vitae luctus. In malesuada lectus at lorem scelerisque lobortis. Duis eu e
+  lit at quam malesuada vehicula. Vivamus sapien ante, varius eu metus at, efficitur vo
+  lutpat magna. Maecenas massa sapien, suscipit eu lectus ut, porta dapibus nibh. Curab
+  itur sed porttitor tortor. Duis imperdiet hendrerit viverra. Donec ac tincidunt risu.'
+
+  article = Article.create :title => 'Article 4', :body => 'Lorem ipsum dolor sit amet,
+  consectetur adipiscing elit. Donec a dictum magna. Maecenas suscipit velit et ullamco
+  rper varius. Vivamus ut arcu quis tellus fringilla pharetra. Donec quis velit fringil
+  la tellus elementum hendrerit. Sed cursus varius velit, vitae pharetra nisl pellentes
+  que in. Donec non tellus vel odio condimentum pharetra. Pellentesque lorem turpis, eu
+  ismod vel erat sed, egestas ullamcorper lorem. Vivamus a convallis odio. In ultrices
+  rhoncus justo. Nulla id feugiat massa. Sed eget aliquet purus. o;eirgn ;grejig gj;osi
+  Duis placerat ante vel sem lobortis consequat. Fusce non elit augue. Aliquam nec magn
+  tincidunt, tincidunt felis non, pellentesque arcu. Cum sociis natoque penatibus et
+  magnis dis parturient montes, nascetur ridiculus mus. Suspendisse interdum vel lorem
+  sed rhoncus. Ut pulvinar sollicitudin ornare. Praesent sed ipsum elit. Donec dapibu
+  ultricies est, at consequat magna suscipit ut. Praesent feugiat mollis quam in rhoncu
+  Etiam in quam consectetur, porttitor odio eu, ultricies magna. Aenean condimentum fri
+  ngilla dui vitae luctus. In malesuada lectus at lorem scelerisque lobortis. Duis eu e
+  lit at quam malesuada vehicula. Vivamus sapien ante, varius eu metus at, efficitur vo
+  lutpat magna. Maecenas massa sapien, suscipit eu lectus ut, porta dapibus nibh. Curab
+  itur sed porttitor tortor. Duis imperdiet hendrerit viverra. Donec ac tincidunt risu.'
+
+  article = Article.create :title => 'Article 5', :body => 'Lorem ipsum dolor sit amet,
+  consectetur adipiscing elit. Donec a dictum magna. Maecenas suscipit velit et ullamco
+  rper varius. Vivamus ut arcu quis tellus fringilla pharetra. Donec quis velit fringil
+  la tellus elementum hendrerit. Sed cursus varius velit, vitae pharetra nisl pellentes
+  que in. Donec non tellus vel odio condimentum pharetra. Pellentesque lorem turpis, eu
+  ismod vel erat sed, egestas ullamcorper lorem. Vivamus a convallis odio. In ultrices
+  rhoncus justo. Nulla id feugiat massa. Sed eget aliquet purus. o;eirgn ;grejig gj;osi
+  Duis placerat ante vel sem lobortis consequat. Fusce non elit augue. Aliquam nec magn
+  tincidunt, tincidunt felis non, pellentesque arcu. Cum sociis natoque penatibus et
+  magnis dis parturient montes, nascetur ridiculus mus. Suspendisse interdum vel lorem
+  sed rhoncus. Ut pulvinar sollicitudin ornare. Praesent sed ipsum elit. Donec dapibu
+  ultricies est, at consequat magna suscipit ut. Praesent feugiat mollis quam in rhoncu
+  Etiam in quam consectetur, porttitor odio eu, ultricies magna. Aenean condimentum fri
+  ngilla dui vitae luctus. In malesuada lectus at lorem scelerisque lobortis. Duis eu e
+  lit at quam malesuada vehicula. Vivamus sapien ante, varius eu metus at, efficitur vo
+  lutpat magna. Maecenas massa sapien, suscipit eu lectus ut, porta dapibus nibh. Curab
+  itur sed porttitor tortor. Duis imperdiet hendrerit viverra. Donec ac tincidunt risu.'
+
+  article = Article.create :title => 'Article 6', :body => 'Lorem ipsum dolor sit amet,
+  consectetur adipiscing elit. Donec a dictum magna. Maecenas suscipit velit et ullamco
+  rper varius. Vivamus ut arcu quis tellus fringilla pharetra. Donec quis velit fringil
+  la tellus elementum hendrerit. Sed cursus varius velit, vitae pharetra nisl pellentes
+  que in. Donec non tellus vel odio condimentum pharetra. Pellentesque lorem turpis, eu
+  ismod vel erat sed, egestas ullamcorper lorem. Vivamus a convallis odio. In ultrices
+  rhoncus justo. Nulla id feugiat massa. Sed eget aliquet purus. o;eirgn ;grejig gj;osi
+  Duis placerat ante vel sem lobortis consequat. Fusce non elit augue. Aliquam nec magn
+  tincidunt, tincidunt felis non, pellentesque arcu. Cum sociis natoque penatibus et
+  magnis dis parturient montes, nascetur ridiculus mus. Suspendisse interdum vel lorem
+  sed rhoncus. Ut pulvinar sollicitudin ornare. Praesent sed ipsum elit. Donec dapibu
+  ultricies est, at consequat magna suscipit ut. Praesent feugiat mollis quam in rhoncu
+  Etiam in quam consectetur, porttitor odio eu, ultricies magna. Aenean condimentum fri
+  ngilla dui vitae luctus. In malesuada lectus at lorem scelerisque lobortis. Duis eu e
+  lit at quam malesuada vehicula. Vivamus sapien ante, varius eu metus at, efficitur vo
+  lutpat magna. Maecenas massa sapien, suscipit eu lectus ut, porta dapibus nibh. Curab
+  itur sed porttitor tortor. Duis imperdiet hendrerit viverra. Donec ac tincidunt risu.'
+
+  article = Article.create :title => 'Article 7', :body => 'Lorem ipsum dolor sit amet,
+  consectetur adipiscing elit. Donec a dictum magna. Maecenas suscipit velit et ullamco
+  rper varius. Vivamus ut arcu quis tellus fringilla pharetra. Donec quis velit fringil
+  la tellus elementum hendrerit. Sed cursus varius velit, vitae pharetra nisl pellentes
+  que in. Donec non tellus vel odio condimentum pharetra. Pellentesque lorem turpis, eu
+  ismod vel erat sed, egestas ullamcorper lorem. Vivamus a convallis odio. In ultrices
+  rhoncus justo. Nulla id feugiat massa. Sed eget aliquet purus. o;eirgn ;grejig gj;osi
+  Duis placerat ante vel sem lobortis consequat. Fusce non elit augue. Aliquam nec magn
+  tincidunt, tincidunt felis non, pellentesque arcu. Cum sociis natoque penatibus et
+  magnis dis parturient montes, nascetur ridiculus mus. Suspendisse interdum vel lorem
+  sed rhoncus. Ut pulvinar sollicitudin ornare. Praesent sed ipsum elit. Donec dapibu
+  ultricies est, at consequat magna suscipit ut. Praesent feugiat mollis quam in rhoncu
+  Etiam in quam consectetur, porttitor odio eu, ultricies magna. Aenean condimentum fri
+  ngilla dui vitae luctus. In malesuada lectus at lorem scelerisque lobortis. Duis eu e
+  lit at quam malesuada vehicula. Vivamus sapien ante, varius eu metus at, efficitur vo
+  lutpat magna. Maecenas massa sapien, suscipit eu lectus ut, porta dapibus nibh. Curab
+  itur sed porttitor tortor. Duis imperdiet hendrerit viverra. Donec ac tincidunt risu.'
+
+  article = Article.create :title => 'Article 8', :body => 'Lorem ipsum dolor sit amet,
+  consectetur adipiscing elit. Donec a dictum magna. Maecenas suscipit velit et ullamco
+  rper varius. Vivamus ut arcu quis tellus fringilla pharetra. Donec quis velit fringil
+  la tellus elementum hendrerit. Sed cursus varius velit, vitae pharetra nisl pellentes
+  que in. Donec non tellus vel odio condimentum pharetra. Pellentesque lorem turpis, eu
+  ismod vel erat sed, egestas ullamcorper lorem. Vivamus a convallis odio. In ultrices
+  rhoncus justo. Nulla id feugiat massa. Sed eget aliquet purus. o;eirgn ;grejig gjsosi
+  Duis placerat ante vel sem lobortis consequat. Fusce non elit augue. Aliquam nec magn
+  tincidunt, tincidunt felis non, pellentesque arcu. Cum sociis natoque penatibus et
+  magnis dis parturient montes, nascetur ridiculus mus. Suspendisse interdum vel lorem
+  sed rhoncus. Ut pulvinar sollicitudin ornare. Praesent sed ipsum elit. Donec dapibu
+  ultricies est, at consequat magna suscipit ut. Praesent feugiat mollis quam in rhoncu
+  Etiam in quam consectetur, porttitor odio eu, ultricies magna. Aenean condimentum fri
+  ngilla dui vitae luctus. In malesuada lectus at lorem scelerisque lobortis. Duis eu e
+  lit at quam malesuada vehicula. Vivamus sapien ante, varius eu metus at, efficitur vo
+  lutpat magna. Maecenas massa sapien, suscipit eu lectus ut, porta dapibus nibh. Curab
+  itur sed porttitor tortor. Duis imperdiet hendrerit viverra. Donec ac tincidunt risu.'
+end
