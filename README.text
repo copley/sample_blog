@@ -1,7 +1,9 @@
-== README
-See Gemfile for ruby, rails and bundle version details.
+README
+See Dockerfile for Ruby version.
+Rails and Bundler version inside Gemfile.
 
-* Deployment instructions
+Deployment instructions:
+
 Navigate to root of application. Run the following commands.
 $ gem install bundle
 $ bundle install
