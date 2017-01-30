@@ -9,6 +9,6 @@ COPY ./Gemfile* /www/
 RUN bundle install --deployment --without development test
 
 ADD . /www
-
+RUN bundle exec rake assets:precompile
 
 CMD bundle exec rake db:migrate db:seed && bundle exec rails server -b '0.0.0.0'
