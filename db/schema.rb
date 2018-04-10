@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20130902181537) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "articles", force: true do |t|
+  create_table "articles", force: :cascade do |t|
     t.string   "title"
     t.text     "body"
     t.datetime "published_at"
@@ -27,18 +27,18 @@ ActiveRecord::Schema.define(version: 20130902181537) do
     t.integer  "user_id"
   end
 
-  create_table "articles_categories", force: true do |t|
+  create_table "articles_categories", force: :cascade do |t|
     t.integer "article_id"
     t.integer "category_id"
   end
 
-  create_table "categories", force: true do |t|
+  create_table "categories", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "comments", force: true do |t|
+  create_table "comments", force: :cascade do |t|
     t.integer  "article_id"
     t.string   "name"
     t.string   "email"
@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 20130902181537) do
     t.datetime "updated_at"
   end
 
-  create_table "profiles", force: true do |t|
+  create_table "profiles", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "name"
     t.date     "birthday"
@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(version: 20130902181537) do
     t.datetime "updated_at"
   end
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "email"
     t.string   "hashed_password"
     t.datetime "created_at"

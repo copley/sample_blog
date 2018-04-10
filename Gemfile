@@ -1,10 +1,24 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.8'
-
+gem 'rails', '4.2.8'
+#gem 'rails', '~> 5.1.2'
+gem 'json', github: 'flori/json', branch: 'v1.8'
 # Use sqlite3 as the database for Active Record
-gem 'pg'
+
+gem 'pg', '~> 0.20.0'
+
+#The pg gem recently released version 1.0.0 which is not yet compatible with Rails.
+#If you're on Rails 5, change your Gemfile's pg requirement to the following1:
+#
+#gem 'pg', '~> 0.18'
+#or on Rails < 5, this:
+#
+#gem 'pg', '~> 0.11'
+#And then run
+#
+#bundle update pg
+#gem 'pg'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
